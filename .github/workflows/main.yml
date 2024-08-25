@@ -40,6 +40,23 @@ jobs:
           user: sgloutnikov
           template: classic
           base: repositories
+
+  activity_comm:
+    runs-on: ubuntu-latest
+    environment: 
+      name: prod
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: activity_comm.svg
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          # Options
+          user: sgloutnikov
+          template: classic
+          base: activity, community
           
   achievements:
     runs-on: ubuntu-latest
