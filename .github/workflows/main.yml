@@ -119,7 +119,7 @@ jobs:
           plugin_habits_days: 28        # Keep only events from last 14 days
           plugin_habits_charts: yes     # Display charts section
           plugin_habits_trim: yes       # Trim unused hours on daily chart
-          plugin_habits_skipped: sgloutnikov/gloutnikov.com-pages, sgloutnikov/slaveya.ink-pages, sgloutnikov/sxm-tracker-client
+          # plugin_habits_skipped: sgloutnikov/gloutnikov.com-pages, sgloutnikov/slaveya.ink-pages, sgloutnikov/sxm-tracker-client
           
   achievements:
     runs-on: ubuntu-latest
