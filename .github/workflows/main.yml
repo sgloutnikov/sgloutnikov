@@ -95,6 +95,8 @@ jobs:
           base: ""
           plugin_followup: yes
           plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_skipped: sgloutnikov/gloutnikov.com-pages, sgloutnikov/slaveya.ink-pages, sgloutnikov/sxm-tracker-client
 
   habits:
     runs-on: ubuntu-latest
