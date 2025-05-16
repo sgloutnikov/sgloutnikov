@@ -121,22 +121,22 @@ jobs:
           plugin_habits_trim: yes       # Trim unused hours on daily chart
           # plugin_habits_skipped: sgloutnikov/gloutnikov.com-pages, sgloutnikov/slaveya.ink-pages, sgloutnikov/sxm-tracker-client
           
-  achievements:
-    runs-on: ubuntu-latest
-    environment: 
-      name: prod
-    permissions:
-      contents: write
-    steps:
-      - uses: stalomeow/metrics@projects-v2 # lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: achievements.svg
-          # Options
-          user: sgloutnikov
-          base: achievements
-          plugin_achievements: yes
-          plugin_achievements_threshold: C      # Display achievements with rank C or higher
-          plugin_achievements_secrets: yes      # Display unlocked secrets achievements
-          plugin_achievements_display: compact  # Use compact display
-          plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
+  # achievements:
+  #   runs-on: ubuntu-latest
+  #   environment: 
+  #     name: prod
+  #   permissions:
+  #     contents: write
+  #   steps:
+  #     - uses: stalomeow/metrics@projects-v2 # lowlighter/metrics@latest
+  #       with:
+  #         token: ${{ secrets.METRICS_TOKEN }}
+  #         filename: achievements.svg
+  #         # Options
+  #         user: sgloutnikov
+  #         base: achievements
+  #         plugin_achievements: yes
+  #         plugin_achievements_threshold: C      # Display achievements with rank C or higher
+  #         plugin_achievements_secrets: yes      # Display unlocked secrets achievements
+  #         plugin_achievements_display: compact  # Use compact display
+  #         plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
