@@ -128,13 +128,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: dkhokhlov/metrics@master # lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: achievements.svg
           # Options
           user: sgloutnikov
-          base: achievements
+          base: ""
           template: classic
           plugin_achievements: yes
           plugin_achievements_threshold: C      # Display achievements with rank C or higher
